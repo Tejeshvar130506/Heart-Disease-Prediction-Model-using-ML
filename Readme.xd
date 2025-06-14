@@ -1,0 +1,62 @@
+❤️ Heart Disease Prediction using Machine Learning
+📌 Project Overview
+This project aims to predict the presence of heart disease in patients using machine learning algorithms. We apply and compare Support Vector Machine (SVM), Naive Bayes, and XGBoost classifiers to identify which model performs best for this classification problem.
+📁 Dataset
+Source: UCI Heart Disease Dataset
+File: heart_disease_uci.csv
+Target Variable: disease_present (0 = no disease, 1 = disease)
+Features: age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal
+⚙️ Technologies Used
+Python 3
+Pandas, NumPy
+scikit-learn
+XGBoost (xgboost library)
+Matplotlib, Seaborn (for visualization)
+Jupyter Notebook (optional for exploration)
+🧠 Machine Learning Models
+✅ Naive Bayes
+A probabilistic classifier based on Bayes’ Theorem with strong (naive) feature independence assumption.
+Fast and efficient, especially for smaller datasets.
+✅ Support Vector Machine (SVM)
+A powerful classifier that finds the optimal hyperplane to separate data points.
+Effective for high-dimensional spaces.
+✅ XGBoost
+An optimized gradient boosting algorithm that performs well on structured/tabular data.
+Generally offers high accuracy and fast performance.
+🧪 Project Workflow
+Data Loading & Cleaning
+Remove irrelevant columns (id, dataset)
+Handle missing values with backfill
+Rename target column to disease_present
+Preprocessing
+Encode categorical variables
+Normalize/scale features if needed
+Split data into training and test sets
+Model Training
+Train and evaluate SVM, Naive Bayes, and XGBoost classifiers
+Evaluation
+Compare models using:
+Accuracy Score
+Confusion Matrix
+Classification Report
+🚀 How to Run the Project
+🔧 Prerequisites
+Ensure the following Python packages are installed:
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+▶️ Run the Script
+python heart_disease_prediction.py
+if you're using a Jupyter Notebo
+jupyter notebook heart_disease_prediction.ipynb
+Output:
+Model	Accuracy
+Naive Bayes	82.07%
+SVM	83.7%
+XGBoost	83.15%
+📌 Conclusion
+XGBoost performs best overall, thanks to its ensemble boosting strategy.
+SVM also delivers strong accuracy, especially with proper feature scaling.
+Naive Bayes is fast and interpretable, great for baseline comparisons.
+📌 Future Enhancements
+Perform hyperparameter tuning
+Use cross-validation
+Add GUI or deploy with Flask/Streamlit
